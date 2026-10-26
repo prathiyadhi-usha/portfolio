@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Prathiba's student portfolio">
+    <title>Prathiba | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="header" id="topbar">
+    <nav class="navbar container">
+        <a href="#home" class="brand"><span class="logo">PR</span><span class="brand-name">Prathiba</span></a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">☰</button>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <a href="#contact" class="talk-btn">Let's talk</a>
+    </nav>
+</header>
+
+<main>
+    <!-- HOME -->
+    <section class="hero" id="home">
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <h1>Hello, I’m Prathiba<span class="dot">.</span></h1>
+                <h2 class="typing-line">I’m a <span class="typing-text"></span><span class="cursor">|</span></h2>
+                <span class="accent-line"></span>
+                <p>Welcome to my creative portfolio! I enjoy building attractive, responsive and user-friendly websites.</p>
+                <a href="#projects" class="btn">Explore my projects <span>→</span></a>
+            </div>
+
+            <div class="hero-photo">
+                <div class="photo-circle">
+                    <img id="profilePhoto" alt="Photo of Prathiba" style="visibility:hidden">
+                </div>
+                <svg class="rays" viewBox="0 0 60 60" aria-hidden="true">
+                    <path d="M8 40 L22 14 M26 46 L48 30 M34 54 L56 52" stroke="#f2674a" stroke-width="4" stroke-linecap="round" fill="none"/>
+                </svg>
+                <svg class="leaf" viewBox="0 0 140 220" aria-hidden="true">
+                    <path d="M70 215 C70 150 70 100 70 20" stroke="#5d7f55" stroke-width="3" fill="none"/>
+                    <path d="M70 20 C30 50 30 100 70 130 C110 100 110 50 70 20Z" fill="#7d9b6f"/>
+                    <path d="M70 120 C20 120 5 160 30 185 C70 175 85 150 70 120Z" fill="#6b8a5e"/>
+                    <path d="M72 130 C115 125 135 165 112 195 C80 190 62 160 72 130Z" fill="#8aa97c"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+        <div class="container split">
+            <div class="split-head"><h2>About</h2><span class="accent-line"></span></div>
+            <div class="about-text reveal">
+                <p>Hi! I’m Prathiba, a student who loves learning about web development and turning ideas into real websites.</p>
+                <p>I enjoy working with HTML, CSS and JavaScript, and I’m always excited to learn something new and improve my skills with every project.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section skills" id="skills">
+        <div class="container split">
+            <div class="split-head"><h2>Skills</h2><span class="accent-line"></span></div>
+            <div class="skill-list">
+                <div class="skill-row reveal">
+                    <div class="skill-top"><span>HTML</span><span>90%</span></div>
+                    <div class="skill-card"><div class="skill-progress" data-progress="90"></div></div>
+                </div>
+                <div class="skill-row reveal">
+                    <div class="skill-top"><span>CSS</span><span>80%</span></div>
+                    <div class="skill-card"><div class="skill-progress" data-progress="80"></div></div>
+                </div>
+                <div class="skill-row reveal">
+                    <div class="skill-top"><span>JavaScript</span><span>70%</span></div>
+                    <div class="skill-card"><div class="skill-progress" data-progress="70"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section projects" id="projects">
+        <div class="container split">
+            <div class="split-head"><h2>Projects</h2><span class="accent-line"></span></div>
+            <div class="cards">
+                <article class="card empty reveal">
+                    <div class="card-art"><span>🚀</span></div>
+                    <div class="card-body">
+                        <div><h3>Projects coming soon</h3><p>New projects will be added here.</p></div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+        <div class="container split">
+            <div class="split-head"><h2>Contact</h2><span class="accent-line"></span></div>
+            <form class="contact-form reveal" id="contact-form">
+                <p class="form-intro">Have a question or an idea? Send me a message.</p>
+                <input type="text" placeholder="Your Name" aria-label="Your name" required>
+                <input type="email" placeholder="Your Email" aria-label="Your email" required>
+                <textarea rows="4" placeholder="Your Message" aria-label="Your message" required></textarea>
+                <button class="btn" type="submit">Send Message <span>→</span></button>
+                <p id="form-message" role="status"></p>
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container footer-row">
+        <p>© <span id="year"></span> Prathiba | My Portfolio</p>
+        <a href="#home">Back to top ↑</a>
+    </div>
+</footer>
+
+<button class="back-to-top" aria-label="Back to top">↑</button>
+
+</body>
+</html>
