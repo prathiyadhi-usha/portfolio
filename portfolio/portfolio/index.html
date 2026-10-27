@@ -72,19 +72,43 @@
     <section class="section skills" id="skills">
         <div class="container split">
             <div class="split-head"><h2>Skills</h2><span class="accent-line"></span></div>
-            <div class="skill-list">
-                <div class="skill-row reveal">
-                    <div class="skill-top"><span>HTML</span><span>90%</span></div>
-                    <div class="skill-card"><div class="skill-progress" data-progress="90"></div></div>
+            <div class="skills-grid">
+                <div class="skill-card reveal html">
+                    <div class="skill-icon">🔤</div>
+                    <div class="skill-info">
+                        <h3>HTML</h3>
+                        <p>Semantic, accessible, SEO-friendly markup for modern web apps.</p>
+                    </div>
                 </div>
-                <div class="skill-row reveal">
-                    <div class="skill-top"><span>CSS</span><span>80%</span></div>
-                    <div class="skill-card"><div class="skill-progress" data-progress="80"></div></div>
+                <div class="skill-card reveal css">
+                    <div class="skill-icon">🎨</div>
+                    <div class="skill-info">
+                        <h3>CSS</h3>
+                        <p>Responsive layouts, Flexbox, Grid, and custom animations.</p>
+                    </div>
                 </div>
-                <div class="skill-row reveal">
-                    <div class="skill-top"><span>JavaScript</span><span>70%</span></div>
-                    <div class="skill-card"><div class="skill-progress" data-progress="70"></div></div>
+                <div class="skill-card reveal js">
+                    <div class="skill-icon">✨</div>
+                    <div class="skill-info">
+                        <h3>JavaScript</h3>
+                        <p>Interactive UI, DOM scripting, and modern ES6+ features.</p>
+                    </div>
                 </div>
+                <div class="skill-card reveal python">
+                    <div class="skill-icon">🐍</div>
+                    <div class="skill-info">
+                        <h3>Python</h3>
+                        <p>Problem solving, scripting, and automation.</p>
+                    </div>
+                </div>
+                <div class="skill-card reveal c">
+                    <div class="skill-icon">💻</div>
+                    <div class="skill-info">
+                        <h3>C</h3>
+                        <p>Efficient programming and algorithmic thinking.</p>
+                    </div>
+                </div>
+                <!-- Add more skill cards as needed -->
             </div>
         </div>
     </section>
@@ -93,29 +117,58 @@
     <section class="section projects" id="projects">
         <div class="container split">
             <div class="split-head"><h2>Projects</h2><span class="accent-line"></span></div>
-            <div class="cards">
-                <article class="card empty reveal">
-                    <div class="card-art"><span>🚀</span></div>
-                    <div class="card-body">
-                        <div><h3>Projects coming soon</h3><p>New projects will be added here.</p></div>
+            <div class="project-cards">
+                <!-- Example project card with PDF placeholder -->
+                <article class="project-card reveal">
+                    <div class="project-icon">📄</div>
+                    <div class="project-info">
+                        <h3>Training Program Registration and Participant Tracking System</h3>
+                        <p>.</p>
+                        <div class="project-tech">HTML, CSS, JavaScript</div>
+                        <div class="project-links">
+                            <a href="./pdfs/my-project.pdf" class="btn ghost" target="_blank" rel="noopener noreferrer">View PDF</a>
+                        </div>
                     </div>
                 </article>
+                <!-- Add more project cards as you add PDFs -->
             </div>
         </div>
     </section>
 
     <!-- CONTACT -->
     <section class="section contact" id="contact">
-        <div class="container split">
-            <div class="split-head"><h2>Contact</h2><span class="accent-line"></span></div>
-            <form class="contact-form reveal" id="contact-form">
-                <p class="form-intro">Have a question or an idea? Send me a message.</p>
-                <input type="text" placeholder="Your Name" aria-label="Your name" required>
-                <input type="email" placeholder="Your Email" aria-label="Your email" required>
-                <textarea rows="4" placeholder="Your Message" aria-label="Your message" required></textarea>
-                <button class="btn" type="submit">Send Message <span>→</span></button>
-                <p id="form-message" role="status"></p>
-            </form>
+        <div class="container contact-split">
+            <div class="contact-left reveal">
+                <h2>Let's Connect</h2>
+                <p class="contact-desc">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
+                <ul class="contact-details">
+                    <li><strong>Email:</strong> <a href="mailto:prathiba@email.com">prathiba@email.com</a></li>
+                    <li><strong>Location:</strong> Chennai, India</li>
+                </ul>
+                <div class="contact-socials">
+                    <a href="#" aria-label="LinkedIn" class="social-link"><span>in</span></a>
+                    <a href="#" aria-label="GitHub" class="social-link"><span>GH</span></a>
+                    <!-- Add more social links as needed -->
+                </div>
+            </div>
+            <div class="contact-right">
+                <form class="contact-form reveal" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" aria-label="Your name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" aria-label="Your email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" aria-label="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="4" placeholder="Your Message" aria-label="Your message" required></textarea>
+                    </div>
+                    <button class="btn send-btn" type="submit">Send Message <span>→</span></button>
+                    <p id="form-message" role="status"></p>
+                </form>
+            </div>
         </div>
     </section>
 </main>
